@@ -1,0 +1,6 @@
+<!--pages/login/login.wxml-->
+<view class="btn-login">
+
+  <button bindtap="login" type="primary">登录</button>
+
+</view>

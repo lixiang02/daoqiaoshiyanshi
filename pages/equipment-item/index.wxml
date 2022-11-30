@@ -1,0 +1,11 @@
+<view class="box">
+  <view class="header"></view>
+  <view class="content">
+    <view class="title">{{current.title}}</view>
+    <view class="img">
+      <image mode="aspectFit" src="{{image}}"></image>
+    </view>
+    <view class="desc">{{current.desc}}</view>
+  </view>
+  <view class="footer"></view>
+</view>

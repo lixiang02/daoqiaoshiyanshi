@@ -1,0 +1,14 @@
+<view class="equipment-item" wx:for="{{current.list}}" wx:key="index" data-index="{{index}}">
+  <view class="equipment-line"></view>
+  <view class="equipment-content" bindtap="gotoDetail" id="{{item.number}}">
+    <view class="equipment-label">
+      <view class="equipment-name-title"><text>设备名称</text></view>
+      <view class="equipment-name-value"><text>{{item.name}}</text></view>
+    </view>
+    <view class="equipment-label">
+      <view class="equipment-name-title"><text>设备编号</text></view>
+      <view class="equipment-name-value"><text>{{item.number}}</text></view>
+    </view>
+  </view>
+</view>
+<view class="equipment-line-footer"></view>

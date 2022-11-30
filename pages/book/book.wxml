@@ -1,0 +1,108 @@
+<view class="book-line"></view>
+<view class="book-list-title">
+  实验预约
+</view>
+<view class="book-line"></view>
+
+<view class="book-action">
+  <view class="form-book">
+    <form class="form-book-content">
+      <view class="form-book-header"></view>
+      <view class="form-book-item">
+        <view class="form-book-item-title">
+          备注
+        </view>
+        <view class="form-book-item-value">
+          <input placeholder="请输入备注" value="{{name}}" bindinput="bindBookNameChange" />
+        </view>
+      </view>
+      <view class="form-book-item">
+        <view class="form-book-item-title">
+          说明
+        </view>
+        <view class="form-book-item-value">
+          <input placeholder="请输入说明" value="{{studentId}}" bindinput="bindBookStudentIdChange" />
+        </view>
+      </view>
+      <view class="form-book-item">
+        <view class="form-book-item-title">
+          实验室
+        </view>
+        <view class="form-book-item-value">
+          <picker value="{{laboratoryName}}" range="{{laboratoryList}}" bindchange="bindLaboratoryChange">
+            <view class="picker">
+              {{laboratoryName}}
+            </view>
+          </picker>
+        </view>
+      </view>
+      <view class="form-book-item">
+        <view class=" form-book-item-title">
+          设备
+        </view>
+        <view class="form-book-item-value">
+          <picker value="{{equipmentName}}" range="{{equipmentList}}" bindchange="bindEquipmentChange">
+            <view class="picker">
+              {{equipmentName}}
+            </view>
+          </picker>
+        </view>
+      </view>
+      <view class="form-book-item">
+        <view class="form-book-item-title">
+          开始日期
+        </view>
+        <view class="form-book-item-value">
+          <picker mode="date" value="{{startDate}}" bindchange="bindBookStartDateChange">
+            <view class="picker">
+              {{startDate}}
+            </view>
+          </picker>
+        </view>
+      </view>
+      <view class="form-book-item">
+        <view class="form-book-item-title">
+          开始时间
+        </view>
+        <view class="form-book-item-value">
+          <picker mode="time" value="{{startTime}}" bindchange="bindBookStartTimeChange">
+            <view class="picker">
+              {{startTime}}
+            </view>
+          </picker>
+        </view>
+      </view>
+      <view class="form-book-item">
+        <view class="form-book-item-title">
+          结束日期
+        </view>
+        <view class="form-book-item-value">
+          <picker mode="date" value="{{endDate}}" bindchange="bindBookEndDateChange">
+            <view class="picker">
+              {{endDate}}
+            </view>
+          </picker>
+        </view>
+      </view>
+      <view class="form-book-item">
+        <view class="form-book-item-title">
+          结束时间
+        </view>
+        <view class="form-book-item-value">
+          <picker mode="time" value="{{endTime}}" bindchange="bindBookEndTimeChange">
+            <view class="picker">
+              {{endTime}}
+            </view>
+          </picker>
+        </view>
+      </view>
+      <view class="submit">
+        <button class="{{submitActive ? 'btn-submit-form-book' : 'btn-submit-form-book-disabled'}}" bind:tap="formSubmit">
+          预约
+        </button>
+      </view>
+    </form>
+  </view>
+</view>
+<view class="book-line"></view>
+<view class="book-line-footer"></view>

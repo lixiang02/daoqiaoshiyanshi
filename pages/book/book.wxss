@@ -1,0 +1,81 @@
+/* pages/book.wxss */
+
+.book-line {
+  height: 1rem;
+  background-color: #f5f5f5;
+}
+
+.book-list-title {
+  background-color: #f5f5f5;
+  text-align: center;
+  color: grey;
+}
+
+.book-content {
+  margin: 1rem;
+  min-height: 10rem;
+}
+
+
+.book-line-footer {
+  height: 2rem;
+  background-color: #f5f5f5;
+}
+
+.book-label {
+  display: flex;
+  margin-top: 44rpx;
+}
+
+.book-name-title {
+  font-size: 13px;
+  color: #666666;
+  width: 156rpx;
+  margin-right: 32rpx;
+}
+
+.form-book-header {
+  padding-bottom: 15px;
+}
+
+.book-name-value {
+  font-size: 13px;
+  color: #333333;
+}
+
+.form-book-item {
+  display: flex;
+  margin: 1rem;
+  margin-bottom: 2rem;
+}
+
+.form-book-item.display {
+  display: none;
+}
+
+.form-book-item-title {
+  font-size: 18px;
+  width: 196rpx;
+  color: #666666;
+}
+
+.form-book-item-value {
+  font-size: 15px;
+  color: #666666;
+  margin-left: 25px;
+  width: 100%;
+}
+
+.btn-submit-form-book {
+  margin: 40px 40px 20px 40px;
+  background: #fa4126;
+  color: #fff;
+  border-radius: 48rpx;
+}
+
+.btn-submit-form-book-disabled {
+  margin: 40px 40px 20px 40px;
+  background: #c6c6c6;
+  color: #fff;
+  border-radius: 48rpx;
+}

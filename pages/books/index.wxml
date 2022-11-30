@@ -1,0 +1,43 @@
+<view class="book-line"></view>
+<view class="book-list-title">
+  实验申请表
+</view>
+
+<view class="book-item" wx:for="{{bookList}}" wx:key="index" data-index="{{index}}">
+  <view class="book-line"></view>
+  <view class="book-content">
+    <view class="book-label">
+      <view class="book-name-title"><text>申请人</text></view>
+      <view class="book-name-value"><text>{{item.name}}</text></view>
+    </view>
+    <view class="book-label">
+      <view class="book-name-title"><text>备注</text></view>
+      <view class="book-name-value"><text>{{item.studentId}}</text></view>
+    </view>
+    <view class="book-label">
+      <view class="book-name-title"><text>预约时间</text></view>
+      <view class="book-name-value"><text>{{item.startTime}} - {{item.endTime}}</text></view>
+    </view>
+    <view class="book-label">
+      <view class="book-name-title"><text>实验室</text></view>
+      <view class="book-name-value"><text>{{item.laboratoryName}}</text></view>
+    </view>
+    <view class="book-label">
+      <view class="book-name-title"><text>设备</text></view>
+      <view class="book-name-value"><text>{{item.equipmentName}}</text></view>
+    </view>
+    <view class="book-label">
+      <view class="book-name-title">
+        上传图片
+      </view>
+      <view class="book-name-value">
+        <view class='ui_uploader_item' wx:for="{{item.uploaderList}}" wx:for-index="uploadIndex" wx:for-item="uploadItem" wx:key="uploadIndex">
+          <icon class='ui_uploader_item_icon' bindtap='clearImg' id="{{item._id}}" data-index="{{uploadIndex}}" type="clear" size="20" color="red" />
+          <image show-menu-by-longpress='1' bindtap='showImg' id="{{item._id}}" data-index="{{uploadIndex}}" src='{{uploadItem}}'></image>
+        </view>
+        <view class='ui_uploader' bindtap='upload' id="{{item._id}}" wx:if="{{item.showUpload}}"></view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="book-line-footer"></view>

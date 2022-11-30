@@ -1,0 +1,4 @@
+/* pages/login/login.wxss */
+.btn-login {
+  margin: 5rem;
+}

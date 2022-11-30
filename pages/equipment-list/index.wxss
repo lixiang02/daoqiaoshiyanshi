@@ -1,0 +1,81 @@
+/* pages/equipment.wxss */
+
+.equipment-line {
+  height: 1rem;
+  background-color: #f5f5f5;
+}
+
+.equipment-list-title {
+  background-color: #f5f5f5;
+  text-align: center;
+  color: grey;
+}
+
+.equipment-item {
+  border-radius: 48rpx;
+}
+
+.equipment-content {
+  margin: 1rem;
+  min-height: 5rem;
+  border-radius: 48rpx;
+}
+
+.equipment-line-footer {
+  height: 1rem;
+  background-color: #f5f5f5;
+}
+
+.equipment-label {
+  display: flex;
+  margin-top: 44rpx;
+}
+
+.equipment-name-title {
+  font-size: 13px;
+  color: #666666;
+  width: 156rpx;
+  margin-right: 32rpx;
+}
+
+.form-equipment-header {
+  padding-bottom: 15px;
+}
+
+.equipment-name-value {
+  font-size: 13px;
+  color: #333333;
+}
+
+.form-equipment-item {
+  display: flex;
+  margin: 1rem;
+  margin-bottom: 2rem;
+}
+
+.form-equipment-item-title {
+  font-size: 18px;
+  width: 196rpx;
+  color: #666666;
+}
+
+.form-equipment-item-value {
+  font-size: 15px;
+  color: #666666;
+  margin-left: 25px;
+  width: 100%;
+}
+
+.btn-submit-form-equipment {
+  margin: 40px 40px 20px 40px;
+  background: #fa4126;
+  color: #fff;
+  border-radius: 48rpx;
+}
+
+.btn-submit-form-equipment-disabled {
+  margin: 40px 40px 20px 40px;
+  background: #c6c6c6;
+  color: #fff;
+  border-radius: 48rpx;
+}
