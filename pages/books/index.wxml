@@ -32,7 +32,7 @@
       </view>
       <view class="book-name-value">
         <view class='ui_uploader_item' wx:for="{{item.uploaderList}}" wx:for-index="uploadIndex" wx:for-item="uploadItem" wx:key="uploadIndex">
-          <icon class='ui_uploader_item_icon' bindtap='clearImg' id="{{item._id}}" data-index="{{uploadIndex}}" type="clear" size="20" color="red" />
+          <icon class='ui_uploader_item_icon' bindtap='clearImg' id="{{item._id}}" data-index="{{uploadIndex}}" type="clear" size="20" color="red" wx:if="{{user.isAdmin}}" />
           <image show-menu-by-longpress='1' bindtap='showImg' id="{{item._id}}" data-index="{{uploadIndex}}" src='{{uploadItem}}'></image>
         </view>
         <view class='ui_uploader' bindtap='upload' id="{{item._id}}" wx:if="{{item.showUpload}}"></view>

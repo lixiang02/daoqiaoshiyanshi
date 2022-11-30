@@ -54,6 +54,15 @@ Page({
                             },
                             success: function (res) {
                               console.log('更新用户完成');
+                              wx.setStorage({
+                                key:"userInfo",
+                                data:JSON.stringify(
+                                  Object.assign({}, user, {
+                                    name: that.data.loginInfo.userInfo.nickName,
+                                    avatarUrl: that.data.loginInfo.userInfo.avatarUrl,
+                                  })
+                                )
+                              })
                               wx.hideLoading();
                               wx.switchTab({
                                 url: `/pages/home/home`,

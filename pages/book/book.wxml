@@ -10,18 +10,18 @@
       <view class="form-book-header"></view>
       <view class="form-book-item">
         <view class="form-book-item-title">
-          备注
+          申请人
         </view>
         <view class="form-book-item-value">
-          <input placeholder="请输入备注" value="{{name}}" bindinput="bindBookNameChange" />
+          <input placeholder="请输入申请人" value="{{name}}" bindinput="bindBookNameChange" />
         </view>
       </view>
       <view class="form-book-item">
         <view class="form-book-item-title">
-          说明
+          备注
         </view>
         <view class="form-book-item-value">
-          <input placeholder="请输入说明" value="{{studentId}}" bindinput="bindBookStudentIdChange" />
+          <input placeholder="请输入备注" value="{{studentId}}" bindinput="bindBookStudentIdChange" />
         </view>
       </view>
       <view class="form-book-item">

@@ -21,6 +21,7 @@ Page({
     equipmentName: '显微镜',
     equipmentList: ['显微镜', '光刻机', '抛光机'],
     page: 0,
+    user: null,
   },
   // 删除图片
   clearImg: function (event) {
@@ -355,7 +356,23 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    this.fetchBookList(this)
+    const self = this
+    wx.getStorage({
+      key: 'userInfo',
+      success (res) {
+        console.log('====user===>', JSON.parse(res.data))
+        self.setData({
+          user: JSON.parse(res.data)
+        })
+        self.fetchBookList(self)
+      },
+      fail(error) {
+        console.log('====not found user===>', error)
+        wx.navigateTo({
+          url: `/pages/login/login`,
+        });
+      }
+    })
   },
 
   /**
