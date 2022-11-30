@@ -1,4 +1,8 @@
 /* pages/login/login.wxss */
 .btn-login {
-  margin: 5rem;
+  top: 70%;
+  position: absolute;
+  left: 21%;
+  width: 60%;
+  transition: translate(-50%, -50%);
 }

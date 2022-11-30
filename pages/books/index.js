@@ -233,7 +233,7 @@ Page({
     })
   },
 
-  fetchBookList(self) {
+  async fetchBookList(self) {
     const limit = 10
     const {
       page,
@@ -332,7 +332,7 @@ Page({
       that.fetchBookList(this).then(() => {
         wx.hideNavigationBarLoading() //完成停止加载
         wx.stopPullDownRefresh() //停止下拉刷新
-      });
+      }).catch;
     }, 500);
 
   },
